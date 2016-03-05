@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Common plug-in for testing
+Bundle-SymbolicName: org.eclipse.db.test.common
+Bundle-Version: 1.0.0
+Bundle-Activator: org.eclipse.db.test.common.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.db.test.dbadapter.mssql
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Export-Package: org.eclipse.db.test.common.dal,
+ org.eclipse.db.test.common.domain,
+ org.eclipse.db.test.common.service

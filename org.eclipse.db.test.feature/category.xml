@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/org.eclipse.db.test.feature_1.0.0.jar" id="org.eclipse.db.test.feature" version="1.0.0" nl="ru">
+      <category name="org.eclipse.db.test.category"/>
+   </feature>
+   <feature url="features/org.eclipse.db.test.feature.required_1.0.0.jar" id="org.eclipse.db.test.feature.required" version="1.0.0">
+      <category name="org.eclipse.db.test.category"/>
+   </feature>
+   <category-def name="org.eclipse.db.test.category" label="SQL тесты"/>
+</site>

@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Sql adapter for MS SQL Server
+Bundle-SymbolicName: org.eclipse.db.test.dbadapter.mssql
+Bundle-Version: 1.0.0
+Bundle-Activator: org.eclipse.db.test.dbadapter.mssql.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ com.microsoft.sqlserver.jdbc
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Export-Package: org.eclipse.db.test.dbadapter.mssql;uses:="org.osgi.framework,org.eclipse.ui.plugin"
