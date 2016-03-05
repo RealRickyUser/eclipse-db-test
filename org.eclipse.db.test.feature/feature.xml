@@ -2,7 +2,7 @@
 <feature
       id="org.eclipse.db.test.feature"
       label="SQL тесты для eclipse 4.5"
-      version="1.0.0">
+      version="1.0.1">
 
    <description url="http://www.example.com/description">
       SQL тесты для eclipse
@@ -59,7 +59,7 @@
          id="org.eclipse.db.test.eclipse.extension"
          download-size="0"
          install-size="0"
-         version="1.0.0"
+         version="1.0.1"
          unpack="false"/>
 
 </feature>
