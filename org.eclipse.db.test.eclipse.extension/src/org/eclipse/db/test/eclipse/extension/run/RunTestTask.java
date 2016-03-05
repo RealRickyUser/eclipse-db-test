@@ -98,6 +98,10 @@ public class RunTestTask extends BaseRunTask {
 		comp.clearParamValues();
 		for (ComponentParameterItem pitem : item.getParameters()) {
 			//ComponentParameterItem pitem = item.findParameter(pi.getName(), pi.getContext());
+			if (pitem.getContext() == null) {
+				ctx.getParams().add(pitem.getMappedContext(), pitem.getMapped(), null);
+				continue;
+			}
 			if (!_context.getParams().contains(pitem.getContext(), pitem.getName()))
 				continue;
 			Object value = _context.getParams().get(pitem.getContext(), pitem.getName());
@@ -113,7 +117,7 @@ public class RunTestTask extends BaseRunTask {
 			if (pi.getMappedContext() == ParameterContext.Local)
 				continue;
 			//parameter not mapped? skipping.
-			if (!_context.getParams().contains(pi.getContext(), pi.getName()))
+			if (pi.getContext() == null || !_context.getParams().contains(pi.getContext(), pi.getName()))
 				continue;
 			if (!ctx.getParams().contains(pi.getMappedContext(), pi.getMapped()))
 				continue;
